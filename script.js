@@ -88,6 +88,12 @@ const locations = [
         "button functions": [pickTwo, pickEight, goTown],
         text: "You find a secret game. Pick a number above. Ten numbers will be randomly chosen between 0 and 10. If the number you choose matches one of the random numbers, you win!"
     },
+    {
+        name: "start",
+        "button text": ["Go to town square", "Go to town square", "Go to town square"],
+        "button functions": [goTown, goTown, goTown],
+        text: "Welcome to Dragon Repeller, Knight!"
+    },
 ];
 
 // initialize buttons
@@ -286,3 +292,22 @@ function pickTwo() {
 function pickEight() {
     pick(8);
 }
+// Call start when the page loads
+start();
+
+// start fonksiyonunuz
+function start() {
+    update(locations[8]);
+    button1.style.display = "none";
+    button2.style.display = "none";
+    button3.innerText = "START";
+    button3.style.fontSize = "30px"; // Make button3 extra large
+    button3.onclick = function() {
+        button1.style.display = "inline-block";
+        button2.style.display = "inline-block";
+        button3.style.fontSize = ""; // Reset font size when clicked
+        goTown();
+    };
+    text.innerText = "Welcome to Dragon Repeller, Knight!\n You wake up in the town 'Gargyl'.\n You don't know how you got here but you know you are a knight on a mission.\n You must leave but only way to do that is by defeating the dragon.";
+}
+
