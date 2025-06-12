@@ -29,7 +29,7 @@ body {
 
 #game {
     max-width: 1000px;
-    height: 250px; /* Bu değeri sabit bir yükseklik isterseniz 'height' olarak değiştirebilirsiniz. */
+    max-height: 400px; /* Bu değeri sabit bir yükseklik isterseniz 'height' olarak değiştirebilirsiniz. */
     background-color: #5c7c65;
     color: #ffffff;
     /* margin: 30px auto 0px;  Bu satır kaldırıldı çünkü flexbox dikey ortalamayı sağlıyor. */
@@ -47,8 +47,7 @@ body {
     color: black;
     -webkit-text-stroke-width: 1%;
     -webkit-text-stroke-color: rgb(0, 0, 0);
-    font-weight: bold;
-}
+    font-weight: bold;}
 
 #monsterStats {
     display: none;
