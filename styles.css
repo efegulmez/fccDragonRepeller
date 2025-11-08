@@ -6,7 +6,7 @@
 }
 
 body {
-    background-image: url("images/town.png");
+    background-image: url("town.png");
     display: flex;
     justify-content:center;
     align-items: center;
